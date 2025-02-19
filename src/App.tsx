@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       {/* Encabezado de la aplicación */}
-      <header className="bg-lime-600 py-3">
+      <header className="bg-lime-600 py-3 px-4">
         <div className="max-w-4xl mx-auto flex justify-between items-center">
           {/* Título de la aplicación */}
           <h1 className="text-center text-lg font-bold text-white uppercase">Contador de calorias</h1>

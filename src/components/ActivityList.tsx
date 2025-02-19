@@ -59,13 +59,13 @@ export default function ActivityList({ activities, dispatch }: ActivityListProps
               <p className="text-2xl font-bold pt-5">{activity.name}</p>
 
               {/* Calorías de la actividad */}
-              <p className="font-black text-4xl text-lime-500">
+              <p className={`font-black text-4xl ${activity.category === 1 ? 'text-lime-500' : 'text-orange-500'} `}>
                 {activity.calories} <span>Calorias</span>
               </p>
             </div>
 
             {/* Contenedor de botones para editar y eliminar la actividad */}
-            <div className="flex gap-5 items-center">
+            <div className="flex flex-col gap-5 items-center justify-center sm:flex-row">
               {/* Botón para editar la actividad */}
               <button
                 onClick={
